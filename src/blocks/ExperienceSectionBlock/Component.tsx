@@ -63,7 +63,7 @@ export const ExperienceSectionBlock: React.FC<Props> = ({ title ,content, button
                                 <h5>Lead Developer</h5>
                             </div>
                             <div className="timeline__desc">
-                                <p>I was building the Company's Management System using Open Source technologies while building websites for our clients.</p>
+                                <p>I was building the Company&apos;s Management System using Open Source technologies while building websites for our clients.</p>
                             </div>
                         </div>
 
