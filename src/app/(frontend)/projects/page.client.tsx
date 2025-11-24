@@ -53,7 +53,7 @@ const PageClient: React.FC<{
     <a  className="thumb-link" title={title} data-size="1050x700" onClick={openDialog}>
                                               {/* <img src={imgUrl}
                                      srcSet={imgUrl} alt="" />  */}
-                                    <Image src={imgUrl} srcSet={imgUrl}  alt='' width={200} height={600}></Image>
+                                    <Image src={imgUrl}  alt='' width={200} height={600}></Image>
 
     </a>
     {isOpen && (

@@ -20,7 +20,7 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
   const pathname = usePathname()
 
   /*the ref*/
-  const headerRef = useRef();
+  const headerRef = useRef<HTMLDivElement>(document.createElement('div'));
 
   useEffect(() => {
     setHeaderTheme(null)

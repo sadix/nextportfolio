@@ -1,12 +1,13 @@
 'use client'
 
-import React, { useEffect, useState, useRef }from 'react'
+import React, { useEffect, useState, useRef, MouseEventHandler }from 'react'
 
 import type { Header as HeaderType } from '@/payload-types'
 
 import { CMSLink } from '@/components/Link'
 import Link from 'next/link'
 import { SearchIcon } from 'lucide-react'
+import { Mouse } from 'playwright-core'
 
 export const HeaderNav: React.FC<{ data: HeaderType }> = ({ data }) => {
   const navItems = data?.navItems || []
@@ -38,7 +39,7 @@ export const HeaderNav: React.FC<{ data: HeaderType }> = ({ data }) => {
         };
     }, []);
 
-    const handleToggleClick = (e) => {
+    const handleToggleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         setIsMenuOpen(!isMenuOpen);
     };

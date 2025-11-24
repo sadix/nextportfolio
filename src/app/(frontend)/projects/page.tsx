@@ -55,16 +55,14 @@ export default async function Page() {
                       if (typeof work === 'object') {
                           const { title,link,image,project_type,content } = work
 
-                          const img_url = image.url 
-
-
-
+                          const img_url = (image && typeof image !== 'string' )?image.url ?? '/placeholder.jpg':"";
+                          
                           return (
                               <div className="masonry__brick" data-aos="fade-up" key={index}>
                                   <div className="item-folio">
                                       <div className="item-folio__thumb">
                                           <PageClient title={title} imgUrl={img_url} content={content}/>
-                                          <a href={link} className="item-folio__project-link" title="Project link" target="_blank"></a>
+                                       <a href={link!} className="item-folio__project-link" title="Project link" target="_blank"></a>
                                       </div>
 
                                       <div className="item-folio__text">
