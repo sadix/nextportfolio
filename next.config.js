@@ -10,7 +10,7 @@ const NEXT_PUBLIC_SERVER_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
 const nextConfig = {
   images: {
     remotePatterns: [
-      ...["https://payload-porfolio.tinehouse.duckdns.org","http://192.168.1.22:3001" /* 'https://example.com' */].map((item) => {
+      ...[NEXT_PUBLIC_SERVER_URL,"https://payload-porfolio.tinehouse.duckdns.org","http://192.168.1.22:3001" /* 'https://example.com' */].map((item) => {
         const url = new URL(item)
 
         return {
