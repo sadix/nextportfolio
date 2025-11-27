@@ -3656,3 +3656,11 @@ article.single-post .container,.posts .container {
 .single-post .min-h-\[80vh\] img.-z-10.object-cover {
     position: relative!important;
 }
+
+div.posts.pt-24.pb-24 > div div > div > div {
+    /* border: 1px solid #eaeaea; */
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    background-color: #1a1a25;
+}
