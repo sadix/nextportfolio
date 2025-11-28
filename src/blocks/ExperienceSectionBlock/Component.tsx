@@ -34,7 +34,7 @@ export const ExperienceSectionBlock: React.FC<Props> = ({ title ,content, button
                         <div className="timeline__block">
                             <div className="timeline__bullet"></div>
                             <div className="timeline__header">
-                                <p className="timeline__timeframe">July 2023 - Present</p>
+                                <p className="timeline__timeframe">July 2023 - Now</p>
                                 <h3 className="item-title">Freelance</h3>
                                 <h5>Web/mobile developper</h5>
                             </div>
