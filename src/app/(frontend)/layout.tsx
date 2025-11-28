@@ -15,6 +15,8 @@ import { draftMode } from 'next/headers'
 
 import Script from 'next/script'
 
+import { Analytics } from '@vercel/analytics/next';
+
 import './base.css'
 import './main.css'
 import './vendor.css'
@@ -55,6 +57,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <Script src="js/jquery-3.2.1.min.js" strategy="afterInteractive"></Script>
         <Script src="js/plugins.js" strategy="afterInteractive"></Script>
         <Script src="js/main.js" strategy="afterInteractive" ></Script>
+        <Analytics />
       </body>
     </html>
   )
