@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Disallow: /admin/*
+
+# Host
+Host: https://sadix.vercel.app
+
+# Sitemaps
+Sitemap: https://sadix.vercel.app/sitemap.xml
+Sitemap: https://sadix.vercel.app/pages-sitemap.xml
+Sitemap: https://sadix.vercel.app/posts-sitemap.xml
