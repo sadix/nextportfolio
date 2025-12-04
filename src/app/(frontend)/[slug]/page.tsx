@@ -109,4 +109,4 @@ const queryPageBySlug = cache(async ({ slug }: { slug: string }) => {
   return result.docs?.[0] || null
 })
 
-export const dynamic = "force-dynamic";
+//export const dynamic = "force-dynamic";
