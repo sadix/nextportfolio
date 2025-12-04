@@ -33,7 +33,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html className={cn(GeistSans.variable, GeistMono.variable)} lang="en" suppressHydrationWarning>
       <head>
         <InitTheme />
-        <meta name="google-site-verification" content="aRfdVyy8KnvXXR-7HdbI2qcioE46_kuDjzAu2AaaGUU" />
         <link href="/favicon.ico" rel="icon" sizes="32x32" />
         <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
        {/*  <script src="/js/jquery-3.2.1.min.js" async></script>
@@ -70,4 +69,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     creator: '@payloadcms',
   },
+  verification: {
+    google: "aRfdVyy8KnvXXR-7HdbI2qcioE46_kuDjzAu2AaaGUU",
+  }
+  
 }
